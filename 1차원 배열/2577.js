@@ -8,8 +8,7 @@
 // 출력
 // 첫째 줄에는 A × B × C의 결과에 0 이 몇 번 쓰였는지 출력한다. 마찬가지로 둘째 줄부터 열 번째 줄까지 A × B × C의 결과에 1부터 9까지의 숫자가 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.
 
-let fs = require('fs');
-let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+let input = [150, 266, 427];
 
 let multiply = 1;
 for (let i = 0; i < 3; i++) {
@@ -18,10 +17,14 @@ for (let i = 0; i < 3; i++) {
 let multiStr = String(multiply);
 
 let countNum = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
 for (let i = 0; i < 10; i++) {
     countNum[Number(multiStr[i])] += 1;
+    console.log('multiStr[i]',multiStr[i])
+    console.log('countNum',countNum)
 }
 
 countNum.forEach(function(cur) {
     console.log(cur);
 });
+
