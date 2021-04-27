@@ -30,5 +30,6 @@ for ( let i = 1; i <= number; i ++ ) {
     }
 
     result = (highScoreStudent / scoreCaseCount * 100).toFixed(3);
+    // toFixed => 소수점 자리수 지정(자르기)
     console.log(result + '%');
 }
