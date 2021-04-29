@@ -16,8 +16,8 @@
 // 10,000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 증가하는 순서로 출력한다.
 
 let oneToMill = [];
-for ( let i = 1; i <= 1000; i ++ ) {
-    oneToMill.push(i)
+for (let  i = 1; i <= 1000; i++ ) {
+    oneToMill.push(i);
 }
 
 let num = 1;
