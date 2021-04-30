@@ -6,3 +6,15 @@
 //
 // 출력
 // 입력으로 주어진 글자의 아스키 코드 값을 출력한다.
+
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+
+// tip: parseInt -> 문자열을 정수로 바꾸는 함수입니다.
+const input = "A"
+
+let str = input.toString();
+result = str.charCodeAt(0);
+
+console.log(result)
