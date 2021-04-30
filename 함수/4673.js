@@ -25,18 +25,23 @@ for ( let i = 0; i <= 10000; i ++ ) {
     let numResult = 0;
     let sumOfNumIndex = 0;
 
-
     for ( let j = 0; j < i.toString().length; j ++ ) {
-        // console.log(j)
+
         sumOfNumIndex += Number(i.toString()[j]);
+        // console.log('sumOfNumIndex', sumOfNumIndex)
     }
     numResult = i + sumOfNumIndex;
+    // console.log('numResult', numResult)
     let idx = oneToMill.indexOf(numResult);
-
+    // console.log('idx', idx)
+    console.log('idx',idx)
+    // console.log(oneToMill)
     if ( idx !== -1 ) {
         oneToMill.splice(idx, 1)
     }
+
 }
+console.log('oneToMill',oneToMill)
 
 for ( idx in oneToMill ) {
     console.log(oneToMill[idx])
