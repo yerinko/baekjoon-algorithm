@@ -9,25 +9,25 @@
 
 const input = [110];
 
-let number;
-const onInput = (input) => number = Number(input);
-
-const onClose = () => {
-    let firstNum = 0;
-    let answer = [];
-    for (let i = 1; i <= number; i++ ) {
-        const numberes = i.toString().split("");
-        for (let x = 0; x < numberes.length - 1; x++ ) {
-            const secondNum = Number(numbers[x]) - Number(numbers[x+1]);
-            if (x !== 0 && firstNum !== secondNum ) {
-                break;
-            } else if ( x !== 0 && firstNum === secondNum ) {
-                answer.push(i);
-            }
-            firstNum = secondNum;
-        };
-    } else {
-        answer.push(i);
-    };
-}
-console.log(answer.length_);
+// let number;
+// const onInput = (input) => number = Number(input);
+//
+// const onClose = () => {
+//     let firstNum = 0;
+//     let answer = [];
+//     for (let i = 1; i <= number; i++ ) {
+//         const numberes = i.toString().split("");
+//         for (let x = 0; x < numberes.length - 1; x++ ) {
+//             const secondNum = Number(numbers[x]) - Number(numbers[x+1]);
+//             if (x !== 0 && firstNum !== secondNum ) {
+//                 break;
+//             } else if ( x !== 0 && firstNum === secondNum ) {
+//                 answer.push(i);
+//             }
+//             firstNum = secondNum;
+//         };
+//     } else {
+//         answer.push(i);
+//     };
+// }
+// console.log(answer.length_);
