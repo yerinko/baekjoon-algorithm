@@ -7,3 +7,24 @@
 //
 // 출력
 // 각 테스트 케이스에 대해 P를 출력한다.
+
+const input = [2, '3 ABC', '5 /HTP'];
+let caseCount = Number(input[0]);
+let result = '';
+
+for ( let i = 1; i <= caseCount; i ++ ) {
+    let count = Number(input[i].split(' '))[0];
+    let cases = input[i].split(' ')[1];
+    // console.log('cases', cases)
+for (let j = 0; j < cases.length; j++) {
+    for (let k = 0; k < count; k++) {
+        result += cases[j];
+    }
+
+}
+    console.log('result', result)
+// result += '\n';
+}
+
+// console.log(result);
+// console.log(count, cases);
