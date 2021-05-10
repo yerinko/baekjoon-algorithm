@@ -6,3 +6,24 @@
 //
 // 출력
 // 첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다. 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.
+
+let input = "Mississipi";
+const result = new Array(26).fill(0);
+
+for (let i = 0; i < input.length; i++) {
+    result[input.charCodeAt(i) - 97] ++;
+}
+
+const max = Math.max(...result);
+const index = result.indexOf(max);
+
+let isSame = false;
+
+for (let j = 0; j < 26; j++) {
+    if (result[j] === max && index != j) {
+        isSame = true;
+        break;
+    }
+}
+
+console.log(isSame ? "?" : String.fromCharCode(index + 65));
