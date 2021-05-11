@@ -7,18 +7,14 @@
 // 출력
 // 첫째 줄에 단어의 개수를 출력한다.``
 
-// let fs = require('fs');
-// let input = fs.readFileSync('/dev/stdin').toString();
+const input = " ";
 
-const input = "The Curious Case of Benjamin Button";
+let wordsArr = input.trim().split(' '); // trim() 문자열 좌우에서 공백을 제거하는 함수
+let countWords = 0;
 
-let wordsArr = input.trim().split(' ');
-let countOfWords = 0;
-
-for (let i = 0; i < wordsArr.length; i++) {
-    if (wordsArr[i] !== '') {
-        countOfWords++;
+for ( let i = 0; i < wordsArr.length; i ++ ) {
+    if (wordsArr[i] != '') {
+        countWords ++;
     }
 }
-
-console.log(countOfWords);
+console.log(countWords)
