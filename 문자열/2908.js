@@ -8,3 +8,14 @@
 //
 // 출력
 // 첫째 줄에 상수의 대답을 출력한다.
+
+const input = [734, 893];
+let firstNumber = Number(String(input[0]).split("").reverse().join(""));
+let secondNumber = Number(String(input[1]).split("").reverse().join(""));
+
+if ( firstNumber > secondNumber ) {
+    console.log(firstNumber);
+} else {
+    console.log(secondNumber);
+}
+
