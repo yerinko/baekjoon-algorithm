@@ -15,3 +15,34 @@
 //
 // 출력
 // 첫째 줄에 분수를 출력한다.
+
+const readLine = require('readline');
+const reader = readLine.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+var input_inte = parseInt(process.argv[2]);
+var count = 0;
+
+var i=0;
+var j=1;
+var cc = 0;
+var q = 1;
+while(j <= (input_inte+1)) {
+
+    ++cc;
+
+    if(cc == input_inte) {
+        console.log(j+"/"+q);
+        break;
+    }
+
+    if(j==1) {
+        ++i;
+        j = j + i;
+        q = 1;
+    } else {
+        --j;
+        ++q;
+    }
+}
