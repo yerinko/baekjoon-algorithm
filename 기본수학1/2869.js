@@ -8,3 +8,13 @@
 //
 // 출력
 // 첫째 줄에 달팽이가 나무 막대를 모두 올라가는데 며칠이 걸리는지 출력한다.
+
+const input = [2, 1, 5];
+
+let up = Number(input[0]);
+let down = Number(input[1]);
+let totalMeter = Number(input[2]);
+let days = 0;
+
+days = Math.ceil((totalMeter - down ) / ( up - down));
+console.log(days);
