@@ -11,3 +11,36 @@
 //
 // 출력
 // 프로그램은 표준 출력에 출력한다. 각 테스트 데이터마다 정확히 한 행을 출력하는데, 내용은 N 번째 손님에게 배정되어야 하는 방 번호를 출력한다.
+
+
+// const fs = require("fs");
+// const [n, ...arr] = (
+//     process.platform === "linux"
+//         ? fs.readFileSync("/dev/stdin").toString()
+//         : `2
+// 6 12 10
+// 30 50 72`
+// )
+//     .trim()
+//     .split("\n");
+//
+// let nArrNumber = Number(n);
+// let newArr = arr.map((e) => e.split(" "));
+// let nAnswer = "";
+//
+// for (let i = 0; i < nArrNumber; i++) {
+//     let H = newArr[i][0],
+//         N = newArr[i][2];
+//
+//     let answerH = N % H;
+//     if (answerH === 0) {
+//         answerH = H;
+//     }
+//
+//     let answerW = Math.ceil(N / H);
+//     answerW < 10 ? (answerW = String(0) + answerW) : answerW;
+//
+//     nAnswer += `${answerH}${answerW}` + "\n";
+// }
+//
+// console.log(nAnswer);
